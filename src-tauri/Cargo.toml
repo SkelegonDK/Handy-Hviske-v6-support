@@ -193,6 +193,12 @@ transcribe-cpp = { version = "0.4.0", default-features = false, features = [
 [patch.crates-io]
 tao = { git = "https://github.com/cjpais/tao", rev = "c3bee28c1d446d95f08c95c3b6f8d4bde052b876" }
 tao-macros = { git = "https://github.com/cjpais/tao", rev = "c3bee28c1d446d95f08c95c3b6f8d4bde052b876" }
+# Local test build only: transcribe.cpp v0.4.0 plus untied Cohere head support
+# (syvai/hviske-v5.3) and the whisper_qwen architecture (syvai/hviske-v6). Expects
+# a checkout of SkelegonDK/transcribe.cpp, branch whisper-qwen-hviske-v6, next to
+# this repo. Drop once an upstream release includes both.
+transcribe-cpp = { path = "../../transcribe.cpp/bindings/rust/transcribe-cpp" }
+transcribe-cpp-sys = { path = "../../transcribe.cpp" }
 
 [dev-dependencies]
 tempfile = "3"

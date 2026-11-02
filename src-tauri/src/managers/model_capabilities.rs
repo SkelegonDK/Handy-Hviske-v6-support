@@ -49,6 +49,7 @@ pub const KNOWN_ARCHES: &[&str] = &[
     "medasr",
     "moss",
     "sortformer",
+    "whisper_qwen",
 ];
 
 // GGUF metadata keys transcribe-cpp writes for ASR models.
