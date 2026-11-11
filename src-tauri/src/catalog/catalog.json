@@ -1715,6 +1715,28 @@
       }
     },
     {
+      "id": "hviske-v6",
+      "name": "Hviske v6 (Non-Commercial)",
+      "description": "Most accurate for Danish, by syv.ai; non-commercial use only",
+      "repository": "ManuelThomsen/hviske-v6-gguf",
+      "revision": "85865207f779856ea804280ec3db50439a7a28f2",
+      "previousRevisions": [],
+      "license": "cc-by-nc-4.0",
+      "family": "whisper_qwen",
+      "parameters": "1.4B",
+      "languages": [
+        "da"
+      ],
+      "capabilities": {"streaming": false, "translate": false, "languageDetection": false, "timestamps": false},
+      "quant": "Q8_0",
+      "role": "asr",
+      "curated": false,
+      "minEngine": null,
+      "files": {
+        "Q8_0": {"filename": "hviske-v6-Q8_0.gguf", "size": 1337254784, "sha256": "5ceef9963494bb69646d5e54d3da16bf410c890a856447b9641317c02a8e7ca7"}
+      }
+    },
+    {
       "id": "lang-id-voxlingua107-ecapa",
       "name": "VoxLingua107 Language ID",
       "description": "Shared spoken-language detector for multilingual transcription models",
@@ -4038,6 +4060,11 @@
         "en": {"error": 4.3, "ciLower": 3.86}
       },
       "performance": {"accelerated": 22.825, "cpu": 17.25}
+    },
+    "hviske-v6": {
+      "accuracy": {
+        "da": {"error": 8.75, "ciLower": 8.16}
+      }
     },
     "moonshine-base": {
       "accuracy": {
