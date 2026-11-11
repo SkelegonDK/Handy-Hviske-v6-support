@@ -1723,7 +1723,7 @@
       "previousRevisions": [],
       "license": "cc-by-nc-4.0",
       "family": "whisper_qwen",
-      "parameters": "1.4B",
+      "parameters": "1.2B",
       "languages": [
         "da"
       ],
